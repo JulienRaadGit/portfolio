@@ -3,135 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julien Raad - Portfolio</title>
+    <title>Julien Raad - Portfolio Développeur</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-sans">
-    <nav class="bg-blue-600 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Julien Raad</h1>
-            <div class="space-x-4">
-                <a href="#" class="hover:text-blue-200">Accueil</a>
-                <a href="#projets" class="hover:text-blue-200">Projets</a>
-                <a href="#competences" class="hover:text-blue-200">Compétences</a>
-                <a href="#contact" class="hover:text-blue-200">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container mx-auto p-6">
-        <section class="bg-white shadow-md rounded-lg p-8 mb-6">
+<body class="bg-gray-50 font-sans text-gray-800 leading-normal">
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <div class="w-1/2">
-                    <h2 class="text-3xl font-bold mb-4">Julien Raad</h2>
-                    <p class="text-gray-700 mb-4">
-                        Étudiant en Licence Informatique, passionné par le développement de jeux vidéo et de logiciels.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="mailto:julien.raadd@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                            Contactez-moi
-                        </a>
-                        <a href="https://www.linkedin.com/in/julien-raad/" target="_blank" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
-                            LinkedIn
+                <span class="text-2xl font-bold tracking-wide">Julien Raad</span>
+            </div>
+            <div class="space-x-6">
+                <a href="#accueil" class="hover:text-blue-200 transition duration-300 ease-in-out">Accueil</a>
+                <a href="#competences" class="hover:text-blue-200 transition duration-300 ease-in-out">Compétences</a>
+                <a href="#projets" class="hover:text-blue-200 transition duration-300 ease-in-out">Projets</a>
+                <a href="#contact" class="hover:text-blue-200 transition duration-300 ease-in-out">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="accueil" class="grid md:grid-cols-2 gap-12 items-center mb-20 bg-white rounded-xl shadow-2xl p-12">
+            <div>
+                <h1 class="text-4xl font-bold mb-4 text-gray-900">Julien Raad</h1>
+                <p class="text-xl text-gray-600 mb-6">
+                    Étudiant en Licence Informatique, passionné par le développement de logiciels et de jeux vidéo.
+                    Je combine créativité technique et résolution de problèmes pour créer des expériences numériques innovantes.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="mailto:julien.raadd@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 flex items-center">
+                        <i class="fas fa-envelope mr-2"></i> Contactez-moi
+                    </a>
+                    <a href="https://www.linkedin.com/in/julien-raad/" target="_blank" class="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-200 transition duration-300 flex items-center">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="bg-blue-100 p-6 rounded-xl shadow-md inline-block">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Coordonnées</h3>
+                    <p class="text-gray-700 mb-2">📱 06 35 53 68 75</p>
+                    <p class="text-gray-700 mb-2">📍 34 rue Bourneuf et Dampierre</p>
+                    <p class="text-gray-700">🏠 Conflans-Sainte-Honorine, 78700</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Compétences</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Langages de Programmation</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fab fa-python mr-2 text-blue-500"></i>Python
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-java mr-2 text-red-500"></i>Java
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-code mr-2 text-gray-500"></i>C
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-database mr-2 text-green-500"></i>SQL
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-html5 mr-2 text-orange-500"></i>HTML
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-css3-alt mr-2 text-blue-600"></i>CSS
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Outils et Technologies</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-mobile-alt mr-2 text-green-500"></i>Android Studio
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-cogs mr-2 text-gray-600"></i>Gradle
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-git-alt mr-2 text-orange-600"></i>Git
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-code-branch mr-2 text-purple-500"></i>VS Code
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-fire mr-2 text-yellow-500"></i>Firebase
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-gamepad mr-2 text-blue-700"></i>Unity
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Projets</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">🍳 Jeu de Cuisine Unity</h3>
+                        <p class="text-gray-600 mb-4">
+                            Développement d'un jeu de cuisine pour approfondir mes compétences en Unity et en C#.
+                        </p>
+                        <a href="cooking.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
+                            Détails du Projet
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 text-right">
-                    <h3 class="font-semibold">Coordonnées</h3>
-                    <p>06 35 53 68 75</p>
-                    <p>34 rue Bourneuf et Dampierre</p>
-                    <p>Conflans-Sainte-Honorine, 78700</p>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">🎣 Tilt The Line</h3>
+                        <p class="text-gray-600 mb-4">
+                            Jeu mobile Android innovant utilisant l'accéléromètre pour une expérience de pêche unique.
+                        </p>
+                        <a href="projet-tilt-the-line.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
+                            Détails du Projet
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">🍽️ Palatium</h3>
+                        <p class="text-gray-600 mb-4">
+                            Site web de gestion de restaurant avec système de commandes intégré et base de données.
+                        </p>
+                        <a href="palatium.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
+                            Détails du Projet
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">🚆 Séparou</h3>
+                        <p class="text-gray-600 mb-4">
+                            Application web de consultation des horaires de trains en temps réel avec API dynamique.
+                        </p>
+                        <a href="separou.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
+                            Détails du Projet
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="competences" class="mb-6">
-            <h2 class="text-2xl font-bold mb-4">Compétences</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="font-semibold mb-2">Langages de Programmation</h3>
-                    <ul class="list-disc list-inside">
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>SQL</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="font-semibold mb-2">Outils</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Unity</li>
-                        <li>Android Studio</li>
-                        <li>Gradle</li>
-                        <li>Git</li>
-                        <li>VS Code</li>
-                        <li>Firebase</li>
-                        <li>Unity</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projets" class="mb-6">
-            <h2 class="text-2xl font-bold mb-4">Projets</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="font-semibold text-xl mb-2">Projet de Jeu de Cuisine Unity</h3>
-                    <p class="text-gray-700 mb-4">
-                        Apprentissage de Unity via un tutoriel de développement de jeu de cuisine.
-                    </p>
-                    <a href="cooking.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                        Voir le projet
-                    </a>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="font-semibold text-xl mb-2">Tilt The Line</h3>
-                    <p class="text-gray-700 mb-4">
-                        Développement d'un jeu mobile Android interactif utilisant l'accéléromètre.
-                    </p>
-                    <a href="projet-tilt-the-line.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                        Voir le projet
-                    </a>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="font-semibold text-xl mb-2">Site Web Palatium</h3>
-                    <p class="text-gray-700 mb-4">
-                        Développement d'un site vitrine avec base de données.
-                    </p>
-                    <a href="palatium.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                        Voir le projet
-                    </a>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="font-semibold text-xl mb-2">Site Web Horaires de Train</h3>
-                    <p class="text-gray-700 mb-4">
-                        Application affichant les horaires en temps réel via une API.
-                    </p>
-                    <a href="separou.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                        Voir le projet
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="bg-white shadow-md rounded-lg p-8">
-            <h2 class="text-2xl font-bold mb-4">Contactez-moi</h2>
-            <form class="grid grid-cols-2 gap-4">
-                <input type="text" placeholder="Nom" class="border p-2 rounded">
-                <input type="email" placeholder="Email" class="border p-2 rounded">
-                <textarea placeholder="Message" class="col-span-2 border p-2 rounded" rows="4"></textarea>
-                <button type="submit" class="col-span-2 bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-                    Envoyer
+        <section id="contact" class="bg-white rounded-xl shadow-lg p-12">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Contactez-moi</h2>
+            <form class="max-w-2xl mx-auto grid grid-cols-2 gap-6">
+                <input type="text" placeholder="Nom" class="col-span-1 border-2 border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="email" placeholder="Email" class="col-span-1 border-2 border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <textarea placeholder="Message" class="col-span-2 border-2 border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="6"></textarea>
+                <button type="submit" class="col-span-2 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-paper-plane mr-2"></i> Envoyer le Message
                 </button>
             </form>
         </section>
     </main>
 
-    <footer class="bg-blue-600 text-white text-center p-4 mt-6">
-        <p>&copy; 2024 Julien Raad. Tous droits réservés.</p>
+    <footer class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Julien Raad. Tous droits réservés.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://www.linkedin.com/in/julien-raad/" target="_blank" class="hover:text-blue-200">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="mailto:julien.raadd@gmail.com" class="hover:text-blue-200">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
